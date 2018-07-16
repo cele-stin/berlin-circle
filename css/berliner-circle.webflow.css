@@ -121,6 +121,7 @@ p {
   z-index: 10;
   -webkit-transition: opacity 550ms ease;
   transition: opacity 550ms ease;
+  color: #5028ff;
 }
 
 .button.comingsoon:hover {
@@ -387,7 +388,7 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 120px;
+  height: 200px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -430,15 +431,23 @@ p {
 }
 
 .column-2 {
-  height: 550px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 488px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .div-block-2 {
-  width: 100%;
-  height: 100%;
-  background-image: url('../images/grant-lemons-80424-unsplash.jpg');
-  background-position: 100% 50%;
-  background-size: cover;
+  width: 120%;
+  height: 80%;
+  background-image: url('../images/julius-drost-670039-unsplash.jpg'), url('../images/grant-lemons-80424-unsplash.jpg');
+  background-position: 100% 50%, 100% 50%;
+  background-size: cover, cover;
 }
 
 .footer-section {
@@ -629,6 +638,46 @@ p {
   text-align: center;
 }
 
+.confirmation-section {
+  height: 100vh;
+  background-image: -webkit-linear-gradient(93deg, #150085, #5028ff), -webkit-linear-gradient(270deg, #5028ff, #5028ff);
+  background-image: linear-gradient(357deg, #150085, #5028ff), linear-gradient(180deg, #5028ff, #5028ff);
+}
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.column-left {
+  z-index: -1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 488px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 @media (max-width: 991px) {
   .hero-content {
     width: 100%;
@@ -662,6 +711,10 @@ p {
   }
   .button-under {
     margin-bottom: 8px;
+  }
+  .column-left {
+    height: 300px;
+    margin-bottom: 32px;
   }
 }
 
