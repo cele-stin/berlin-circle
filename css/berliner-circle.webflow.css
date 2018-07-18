@@ -444,7 +444,7 @@ p {
 
 .div-block-2 {
   width: 120%;
-  height: 80%;
+  height: 100%;
   background-image: url('../images/julius-drost-670039-unsplash.jpg'), url('../images/grant-lemons-80424-unsplash.jpg');
   background-position: 100% 50%, 100% 50%;
   background-size: cover, cover;
